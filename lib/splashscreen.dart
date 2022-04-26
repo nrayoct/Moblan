@@ -26,24 +26,37 @@ class _SplashscreenState extends State<Splashscreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
+      backgroundColor: Color(0xffebb844),
+      body: Container (
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            colors: [
+              Color(0xffebb844),
+              Color(0xffffded6),
+            ],
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+          ),
+        ),
+      child: Center(
+         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Container(
-              height: 200,
+              height: 250,
               width: 200,
               decoration: BoxDecoration(
                 image: DecorationImage(
-                  image: AssetImage('assets/LogoBhinne.png'),
+                  image: AssetImage('assets/Logo.png'),
                   fit: BoxFit.fill,
                 ),
-                shape: BoxShape.circle,
+                //shape: BoxShape.circle,
               ),
             ),
           ],
         ),
+      ),
       ),
     );
   }

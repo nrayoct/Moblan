@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:utsbottomnav/home.dart';
 import 'package:utsbottomnav/search.dart';
 import 'package:utsbottomnav/favorite.dart';
@@ -26,13 +27,14 @@ class _DashboardState extends State<Dashboard> {
     return MaterialApp(
       title: Dashboard.title,
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.amber,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(
         appBar: AppBar(
-          title: Text(Dashboard.title),
+          title: Text("Bhinne", style: TextStyle(fontFamily: 'Fancy')),
         ),
+
         body: tabs[_currentIndex],
         bottomNavigationBar: SalomonBottomBar(
           currentIndex: _currentIndex,
@@ -42,21 +44,21 @@ class _DashboardState extends State<Dashboard> {
             SalomonBottomBarItem(
               icon: Icon(Icons.home),
               title: Text("Home"),
-              selectedColor: Colors.lightGreen,
+              selectedColor: Color(0xffebb844),
             ),
 
             /// Search
             SalomonBottomBarItem(
               icon: Icon(Icons.search),
               title: Text("Search"),
-              selectedColor: Colors.orangeAccent,
+              selectedColor: Color(0xffebb844),
             ),
 
             /// Likes
             SalomonBottomBarItem(
               icon: Icon(Icons.favorite_border),
               title: Text("Favorite"),
-              selectedColor: Colors.redAccent,
+              selectedColor: Color(0xffebb844),
             ),
           ],
           onTap: (index) {

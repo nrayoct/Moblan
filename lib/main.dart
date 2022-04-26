@@ -14,7 +14,7 @@ class Utsbottomnav extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = ThemeConfig.lightTheme;
     return MaterialApp(
-      title: 'Bhinne',
+      //title: Text("Bhinne", style: TextStyle(fontFamily: 'Fancy'),),
       theme: ThemeConfig.lightTheme,
       home: Splashscreen(),
     );

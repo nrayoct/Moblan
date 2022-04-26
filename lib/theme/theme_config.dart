@@ -7,6 +7,9 @@ class ThemeConfig {
   static Color darkAccent = Color(0xff2ca8e2);
   static Color lightBG = Colors.white;
   static Color darkBG = Color(0xff121212);
+  static Color yellow = Color(0xebb844);
+
+
 
   static ThemeData lightTheme = ThemeData(
     backgroundColor: lightBG,
