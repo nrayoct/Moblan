@@ -13,7 +13,13 @@ class Dashboard extends StatefulWidget {
 }
 
 class _DashboardState extends State<Dashboard> {
-  var _currentIndex = 0;
+  int _currentIndex = 0;
+
+  final tabs = [
+    Center(child: Text('Home')),
+    Center(child: Text('Search')),
+    Center(child: Text('Favorite')),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -27,9 +33,10 @@ class _DashboardState extends State<Dashboard> {
         appBar: AppBar(
           title: Text(Dashboard.title),
         ),
+        body: tabs[_currentIndex],
         bottomNavigationBar: SalomonBottomBar(
           currentIndex: _currentIndex,
-          onTap: (i) => setState(() => _currentIndex = i),
+          unselectedItemColor: Colors.grey,
           items: [
             /// Home
             SalomonBottomBarItem(
@@ -52,8 +59,15 @@ class _DashboardState extends State<Dashboard> {
               selectedColor: Colors.redAccent,
             ),
           ],
+          onTap: (index) {
+            setState(() {
+              _currentIndex = index;
+            });
+          }
         ),
       ),
     );
+
   }
 }
+
