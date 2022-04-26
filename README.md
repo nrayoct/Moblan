@@ -1,15 +1,16 @@
-# utsbottomnav
+# BHINNE Flutter Project by Kelompok 5
 
-A new Flutter project.
+Projek Flutter Mobile Lanjut
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+1. setup flutter
+2. clone the repo
+3. install all package
+4. run the apps
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+or
+download file berekstensi .apk yang terlampir pada repository github
 
 For help getting started with Flutter, view our
 [online documentation](https://flutter.dev/docs), which offers tutorials,
