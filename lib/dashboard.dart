@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:salomon_bottom_bar/salomon_bottom_bar.dart';
+import 'package:utsbottomnav/home.dart';
+import 'package:utsbottomnav/search.dart';
+import 'package:utsbottomnav/favorite.dart';
 
 
 class Dashboard extends StatefulWidget {
@@ -17,7 +20,7 @@ class _DashboardState extends State<Dashboard> {
     return MaterialApp(
       title: Dashboard.title,
       theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
+        primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Scaffold(

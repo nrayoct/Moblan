@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:utsbottomnav/theme/theme_config.dart';
 import 'dashboard.dart';
+import 'package:utsbottomnav/splashscreen.dart';
 
 void main() {
   runApp(const Utsbottomnav());
@@ -15,7 +16,7 @@ class Utsbottomnav extends StatelessWidget {
     return MaterialApp(
       title: 'Bhinne',
       theme: ThemeConfig.lightTheme,
-      home: Dashboard(),
+      home: Splashscreen(),
     );
   }
 }
