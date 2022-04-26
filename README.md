@@ -1,6 +1,10 @@
 # BHINNE Flutter Project by Kelompok 5
 
 Projek Flutter Mobile Lanjut
+###Anggota kelompok 5:
+Aghita Namira Yuliza    1917051019
+Nur Ayu Octarina        1917051039
+Fanirizki Sofiyana      1917051050
 
 ## Getting Started
 
